@@ -30,6 +30,8 @@ button {
   font-size: 60%;
 }
 
+
+
 .flex-center {
   width: 100%;
 
@@ -57,10 +59,12 @@ button {
   -webkit-animation: icon3d 200ms 10;
   animation: icon3d 200ms 10;
   color: #fff;
+  text-decoration: none;
 }
 .icon-3d:hover {
   -webkit-animation: icon3d 200ms infinite;
   animation: icon3d 200ms infinite;
+  text-decoration: none;
 }
 
 @keyframes icon3d {
