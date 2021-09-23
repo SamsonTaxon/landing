@@ -34,20 +34,10 @@ button {
   font-family: 'Electrolize';
   src: url('https://fonts.googleapis.com/css?family=Electrolize') format('woff2');
 }
-.badge:after{
-    content:"100";
-    position: absolute;
-    background: rgba(0,0,255,1);
-    height:2rem;
-    top:1rem;
-    right:1.5rem;
-    width:2rem;
-    text-align: center;
-    line-height: 2rem;;
-    font-size: 1rem;
-    border-radius: 50%;
-    color:white;
-    border:1px solid blue;
+
+span {
+  font-family: 'Electrolize';
+  src: url('https://fonts.googleapis.com/css?family=Electrolize') format('woff2');
 }
 .text {
 
@@ -57,6 +47,8 @@ button {
 
   display: flex;
   align-items: center;
+  text-orientation: upright;
+  color: red;
 
 }
 
