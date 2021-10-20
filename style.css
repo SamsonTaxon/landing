@@ -1,16 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Electrolize);
+
+:root {
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+}
+
+html[data-theme='light'] {
+    --background-color: #fff;
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+}
+
+html[data-theme='dark'] {
+    --background-color: hsla(0, 0%, 10%, 1);
+    --text-color: #F7F8F8;
+}
+
+.topright {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+/*  color: var(--text-color);
+  outline: 0;*/
+
+}
+
 body{
-  background-color: hsla(0, 0%, 10%, 1);
+  background-color: var(--background-color);
   overflow-x: hidden;
 }
+
 .body {
   margin: 0;
   padding: 0;
   font-family: 'Electrolize';
   font-size: 8em;
   text-transform: ;
-  background-color: hsla(0, 0%, 10%, 1);
-  color: hsla(0, 0%, 93%, 1);
+  background-color: var(--background-color);
+  color: var(--text-color);
   width: 100%;
 
   overflow: hidden;
@@ -24,8 +52,7 @@ p {
 
 button {
   background: transparent;
-  border: 1px solid hsla(0, 0%, 0%, .8);
-  padding: .5em;
+  border: 0px solid hsla(0, 0%, 0%, .8);
   width: 5em;
   font-size: 60%;
 }
@@ -68,8 +95,8 @@ span {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-    background-color: hsla(0, 0%, 10%, 1);
-  color: hsla(0, 0%, 93%, 1);
+    background-color: var(--background-color);
+  color: var(--text-color);
   width: 100%;
 
 }
@@ -78,7 +105,7 @@ span {
   padding: 10px;
   -webkit-animation: icon3d 200ms 10;
   animation: icon3d 200ms 10;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 }
 .icon-3d:hover {
@@ -112,6 +139,6 @@ footer{
   bottom: 0;
   width: 100%;
   background-color: red;
-  color: white;
+  color: var(--text-color);
   text-align: center;
 }
