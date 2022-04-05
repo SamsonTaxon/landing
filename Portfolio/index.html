@@ -1,0 +1,189 @@
+<html>
+    <title>Samson Taxon - Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400;1,900&display=swap" rel="stylesheet">
+
+</head>    
+<body>
+    <div id="modal" onclick="document.getElementById('modal').style.display='none'">
+        <div id="info1">
+            <iframe id="contentFrame"
+                title="Inline Frame Example"
+                width="100%"
+                height="100%"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+            </iframe>
+                    <!-- <h1 id="heading"></h1>
+            <img id="picture" src="" alt="placeholder">
+            <p id="description">This is content that will be replaced with javascript depending on which portfolio item is selected. The description, title, and photo/photogallery will be updateable within a folder containing images and text files. The thumbnails and titles are added manually in each item div (Ideally - I know this is ambitious but it will be far easier to update than indiivdually adding a custom div for each item I want to add or update)</p>
+             -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+                <div class="logo">
+                    <img class="logo" src="images/logo/logo_White.png" style="width: 100%;">
+                </div>
+                <br><br>
+                <div class="links">
+                    <a href="https://samsontaxon.io/">Home</a>
+                    <br>
+                    <a href="about.html">About</a>
+                    <br><br>
+                    <a href="contact.html">Contact</a>    
+                    <!-- <button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>                 -->
+                </div> 
+        </div>
+
+        <div class="gallery">
+<!-- COLUMN #1 -->
+            <div class="col">
+                <div class="item" onclick="lucent()">
+                    <img class="thumbnail" src="WorkThumbnails/lucent_bulb.png" alt="lucent lightbulb" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Lucent</div>
+                </div>
+                <div class="item" onclick="beats()">
+                    <img class="thumbnail" src="WorkThumbnails/Beats4iya3.png" alt="Packaging Mockup" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Beats 4 IY8</div>
+                </div>
+                <div class="item" onclick="wallet()">
+                    <img class="thumbnail" src="WorkThumbnails/wallet_1.png" alt="Custom Wallet Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Wallet Design</div>
+                </div>
+                <div class="item" onclick="screw()">
+                    <img class="thumbnail" src="WorkThumbnails/screw.PNG" alt="Swivel angle screw head" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Swivel Screw</div>
+                </div>
+                <div class="item" onclick="rocket()">
+                    <img class="thumbnail" src="WorkThumbnails/rocket-1-02.png" alt="Rocket Icon" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Rocket Icon</div>
+                </div>
+                <div class="item" onclick="magnet1()">
+                    <img class="thumbnail" src="WorkThumbnails/magnetwhite.png" alt="Magnet Connector Interface" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Magnet Interface</div>
+                </div>
+                    <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="modern lamp project">
+                    <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="modern lamp project">
+                    <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                    <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="filler">
+                    <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                    <img class="item fillers" src="WorkThumbnails/fillers/short1.png" style="height: 14%;" alt="filler">
+            </div>
+<!-- COLUMN #2 -->   
+            <div class="col">
+                <div class="item" onclick="skate()">
+                    <img class="thumbnail" src="WorkThumbnails/skateboardunit.png" alt="SkateBoard Drive Unit" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Skate <br> Unit</div>
+                </div>
+                <div class="item" onclick="coaster()">
+                    <img class="thumbnail" src="WorkThumbnails/coaster_1.png" alt="Gimbal Rollercoaster Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Roller Coaster</div>
+                </div>
+                <div class="item" onclick="soldering()">
+                    <img class="thumbnail" src="WorkThumbnails/solder1.PNG" alt="Soldering Station Cad" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Soldering Station</div>
+                </div>
+                <div class="item" onclick="extruder1()">
+                    <img class="thumbnail" src="WorkThumbnails/extruder1.png" alt="Custom Dual Extruder Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Dual Extruder</div>
+                </div>
+                <div class="item" onclick="extruder2()">
+                    <img class="thumbnail" src="WorkThumbnails/lift.gif" alt="Dual Extruder" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Dual Extruder 2</div>
+                </div>
+                <div class="item" onclick="wcc1()">
+                    <img class="thumbnail" src="WorkThumbnails/WCCInstaPost1.png" alt="WCC Invite Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >WCC Graphic </div>
+                </div>
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="filler">
+            </div>
+<!-- COLUMN #3 -->
+            <div class="col">
+                <div class="item" onclick="lamp()">
+                    <img class="thumbnail" src="WorkThumbnails/lamp_1.png" alt="Lamp Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Lamp<br>Design</div>
+                </div>
+                <div class="item" onclick="psa()">
+                    <img class="thumbnail" src="WorkThumbnails/PSA.png" alt="PSA Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >PSA<br>Design</div>
+                </div>
+                <div class="item" onclick="rings()">
+                    <img class="thumbnail" src="WorkThumbnails/rings_1.png" alt="Custom Rings" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Rings<br>CAD</div>
+                </div>
+                <div class="item" onclick="tommy()">
+                    <img class="thumbnail" src="WorkThumbnails/tommy-01.png" alt="Tommy Trojan Dot Vector" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Tommy<br>Dot Vector</div>
+                </div>
+                <div class="item" onclick="sunset()">
+                    <img class="thumbnail" src="WorkThumbnails/Sunsetad4k16x9.jpeg" alt="Sunset IYA Pitch Video" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Sunset</div>
+                </div>
+                <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="modern lamp project">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="modern lamp project">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+            </div> 
+            
+<!-- COLUMN #4 -->   
+            <div class="col" >
+                <div class="item" onclick="lucentBox()">
+                    <img class="thumbnail" src="WorkThumbnails/lucent_box.png" alt="lucent box" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Lucent<br>Box</div>
+                </div>
+                <div class="item" onclick="gameboy()">
+                    <img class="thumbnail" src="WorkThumbnails/blender1.png" alt="Blender Design Work" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Blender<br>Design</div>
+                </div>
+                <div class="item" onclick="desk()">
+                    <img class="thumbnail" src="WorkThumbnails/desk.png" alt="Custom designed desk build" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >My Desk</div>
+                </div>
+                <div class="item" onclick="theranos()">
+                    <img class="thumbnail" src="WorkThumbnails/elizabeth-holmes1 copy.png" alt="Joke Poster Design" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Joke Poster</div>
+                </div>
+                <div class="item" onclick="magnet2()">
+                    <img class="thumbnail" src="WorkThumbnails/magnetblack.png" alt="Magnet Connector Interface" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >Magnet Interface</div>
+                </div>
+                <div class="item" onclick="grp()">
+                    <img class="thumbnail" src="WorkThumbnails/ipadontable2-88a2ec.png" alt="GRP Product" style="width: 100%; border-radius: 15px;">
+                    <div class="title" >GRP</div>
+                </div>
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+
+                <img class="item fillers" src="WorkThumbnails/fillers/short1.png" alt="filler">
+                <img class="item fillers" src="WorkThumbnails/fillers/tall1.png" alt="filler">
+            </div>
+    </div>
+
+</div>
+
+<!-- script -->
+<script src="content.js"></script>
+</body>
+</html>
